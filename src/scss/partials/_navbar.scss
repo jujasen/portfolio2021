@@ -5,6 +5,10 @@
         height: 25px;
     }
 
+    .container-fluid {
+        padding: 0 $spacingSmall;
+    }
+
     .menu {
 
         &__nav {

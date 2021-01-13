@@ -1,0 +1,24 @@
+.hero {
+
+    &__illustration {
+        width: 80%;
+        display: block;
+        margin: $spacingSmall auto;
+        padding: $spacingSmall 0;
+    }
+
+    &__heading {
+        font-family: $fontHeading;
+        font-weight: $weightLarge;
+        font-size: $headingLarge;
+
+        &--dark {
+            color: $indigoPrimary;
+        }
+    }
+
+    &__subheading {
+        font-family: $fontSecondary;
+        font-size: $headingSmall;
+    }
+}

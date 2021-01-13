@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './scss/main.scss';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
       <header >
           <Navbar></Navbar>
       </header>
+      <main>
+        <Hero></Hero>
+      </main>
     </div>
   );
 }
