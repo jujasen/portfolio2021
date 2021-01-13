@@ -80,12 +80,13 @@ body {
   display: block;
   margin: 1rem auto;
   padding: 1rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .hero__heading {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .hero__heading--dark {
@@ -94,6 +95,632 @@ body {
 
 .hero__subheading {
   font-family: "PT Mono", monospace;
-  font-size: 30px;
+  font-size: 22px;
+  -webkit-animation: cray 6s infinite;
+          animation: cray 6s infinite;
+  margin: 0;
+}
+
+.hero__subheading,
+.hero__subheading * {
+  -webkit-animation: cray 20s infinite steps(50);
+          animation: cray 20s infinite steps(50);
+  display: inline-block;
+}
+
+@-webkit-keyframes cray {
+  2% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  4% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  6% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  8% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  10% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  12% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  14% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  16% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  18% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  20% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  22% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  24% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  26% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  28% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  30% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  32% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  34% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  36% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  38% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  40% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  42% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  44% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  46% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  48% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  50% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  52% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  54% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  56% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  58% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  60% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  62% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  64% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  66% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+  68% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  70% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  72% {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  74% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  76% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  78% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  80% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  82% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  84% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  86% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  88% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  90% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  92% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  94% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  96% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  98% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+
+@keyframes cray {
+  2% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  4% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  6% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  8% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  10% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  12% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  14% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  16% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  18% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  20% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  22% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  24% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  26% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  28% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  30% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  32% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  34% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  36% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  38% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  40% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  42% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  44% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  46% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  48% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  50% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  52% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  54% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  56% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  58% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  60% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  62% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  64% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  66% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+  68% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  70% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  72% {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  74% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  76% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  78% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  80% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  82% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  84% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  86% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  88% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  90% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  92% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  94% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  96% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  98% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+
+.hero__location {
+  font-family: "PT Mono", monospace;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.hero__description {
+  font-size: 25px;
+  margin: 0;
+}
+
+.hero__support {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  margin: 0;
+}
+
+.hero__arrow {
+  font-size: 40px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

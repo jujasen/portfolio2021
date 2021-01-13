@@ -5,20 +5,106 @@
         display: block;
         margin: $spacingSmall auto;
         padding: $spacingSmall 0;
+        margin-bottom: $spacingXSmall;
     }
 
     &__heading {
         font-family: $fontHeading;
         font-weight: $weightLarge;
-        font-size: $headingLarge;
+        font-size: $headingMedium;
 
         &--dark {
             color: $indigoPrimary;
         }
     }
 
+
+    //Cray animation https://codepen.io/lukemeyrick/pen/ayRgWO
+    $steps: 50;
     &__subheading {
         font-family: $fontSecondary;
-        font-size: $headingSmall;
+        font-size: $fontMedium;
+        animation: cray 6s infinite;
+        margin: 0;
+
+        &,
+        * {
+            animation: cray 20s infinite steps($steps);
+            display: inline-block;
+        }
+
+        @keyframes cray {
+            @for $i from 1 to $steps {
+                $per: 100% / $steps * $i;
+                $weight: (100,
+                        200,
+                        300,
+                        400,
+                        500,
+                        600,
+                        700);
+                $style: (normal,
+                        italic,
+                        normal,
+                        normal);
+                $decor: (none,
+                        none,
+                        line-through,
+                        underline,
+                        none,
+                        none,
+                        none);
+                $trans: (none,
+                        none,
+                        uppercase,
+                        lowercase,
+                        capitalize,
+                        none,
+                        none,
+                        none,
+                        none,
+                        none,
+                        none);
+
+                $arrayW: random(7);
+                $arrayS: random(4);
+                $arrayD: random(7);
+                $arrayT: random(11);
+
+                #{$per} {
+                    font-weight: nth($weight, $arrayW);
+                    font-style: nth($style, $arrayS);
+                    text-decoration: nth($decor, $arrayD);
+                    text-transform: nth($trans, $arrayT);
+                }
+            }
+        }
+
+
+    }
+
+    &__location {
+        font-family: $fontSecondary;
+        font-size: $fontXSmall;
+        margin-bottom: $spacingMedium;
+    }
+
+    &__description {
+        font-size: $fontLarge;
+        margin: 0;
+    }
+
+    &__support {
+        font-size: $fontSmall;
+        margin-bottom: $spacingXSmall;
+        margin: 0;
+
+    }
+
+    &__arrow {
+        font-size: $headingMedium;
+        text-align: center;
     }
 }
+
+
