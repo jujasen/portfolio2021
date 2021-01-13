@@ -13,6 +13,11 @@ body {
   height: 25px;
 }
 
+.navbar .menu__link {
+  font-family: "PT Mono", monospace;
+  text-transform: uppercase;
+}
+
 .navbar-light .navbar-toggler {
   border: none;
 }

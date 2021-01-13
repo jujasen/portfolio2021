@@ -5,8 +5,17 @@
         height: 25px;
     }
 
+    .menu {
+
+        &__link {
+            font-family: $fontSecondary;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .navbar-light .navbar-toggler {
     border: none;
 }
+
+
