@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Mono&family=Sen:wght@400;700&display=swap");
+body {
+  font-family: "Sen", sans-serif;
+  color: #000000;
+}
+
+.svg {
+  width: 50px;
+}
+
+.navbar__menu-btn {
+  width: 25px;
+  height: 25px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */
