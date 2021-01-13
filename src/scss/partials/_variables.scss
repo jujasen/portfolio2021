@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Mono&family=Sen:wght@400;700&display=swap');
 
 // COLORS
+$white: #fff;
+$black: #000000;
+$indigoPrimary: #7100E1;
+$indigoLight: #D8B4FF;
+$indigoDark: #490092;
 
 
 // TYPOGRAPHY
@@ -18,3 +23,5 @@ $headingMedium: 40px;
 $headingLarge: 50px;
 
 // SPACING
+
+$spacingXSmall: 0.5rem;
