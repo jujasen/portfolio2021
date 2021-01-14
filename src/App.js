@@ -3,6 +3,7 @@ import './App.css';
 import './scss/main.scss';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Projects from './components/Projects'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       </header>
       <main>
         <Hero></Hero>
+        <Projects></Projects>
       </main>
     </div>
   );
