@@ -1,3 +1,67 @@
 .project {
-    
+    margin-bottom: $spacingLarge;
+
+
+    // Comingbook style borders: https://codemyui.com/comicbook-inspired-hand-drawn-borders/
+    &__visual {
+        width: 300px;
+        height: 200px;
+        background-color: $indigoLight;
+        border: solid black;
+        border-color: black;
+        border-width: 3px 4px 3px 5px;
+        border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+        transform: rotate(2deg);
+        margin-bottom: $spacingMedium;
+        margin-left: auto;
+        margin-right: auto;
+
+        &--hidden{
+            display: none;
+        }
+    }
+
+    &__img {
+        display: block;
+        overflow: hidden;
+        width: 300px;
+        height: 200px;
+        background-color: $indigoLight;
+        border: solid black;
+        border-color: black;
+        border-width: 3px 4px 3px 5px;
+        border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+        transform: rotate(1deg);
+        margin-bottom: $spacingMedium;
+        margin-left: auto;
+        margin-right: auto;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-family: $fontHeading;
+        font-weight: $weightLarge;
+        font-size: $headingSmall;
+        margin: 0;
+        line-height: 200px;
+        vertical-align: middle;
+        text-align: center;
+        display: block;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-family: $fontSecondary;
+        text-decoration: none;
+        color: $black;
+        font-size: $fontSmall;
+    }
+
+
 }
