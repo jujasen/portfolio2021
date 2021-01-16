@@ -1,6 +1,10 @@
 .project {
     margin-bottom: $spacingLarge;
 
+    a {
+        text-decoration: none;
+        color: $black;
+    }
 
 
     &__visual {
