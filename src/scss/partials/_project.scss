@@ -2,66 +2,128 @@
     margin-bottom: $spacingLarge;
 
 
-    // Comingbook style borders: https://codemyui.com/comicbook-inspired-hand-drawn-borders/
+
     &__visual {
-        width: 300px;
-        height: 200px;
         background-color: $indigoLight;
-        border: solid black;
-        border-color: black;
-        border-width: 3px 4px 3px 5px;
-        border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
-        transform: rotate(2deg);
-        margin-bottom: $spacingMedium;
         margin-left: auto;
         margin-right: auto;
-
-        &--hidden{
-            display: none;
-        }
-    }
-
-    &__img {
-        display: block;
-        overflow: hidden;
-        width: 300px;
-        height: 200px;
-        background-color: $indigoLight;
-        border: solid black;
-        border-color: black;
-        border-width: 3px 4px 3px 5px;
-        border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
-        transform: rotate(1deg);
-        margin-bottom: $spacingMedium;
-        margin-left: auto;
-        margin-right: auto;
-
-        &--hidden {
-            display: none;
-        }
     }
 
     &__title {
         font-family: $fontHeading;
         font-weight: $weightLarge;
         font-size: $headingSmall;
-        margin: 0;
-        line-height: 200px;
-        vertical-align: middle;
+        margin: auto;
         text-align: center;
-        display: block;
-
-        &--hidden {
-            display: none;
-        }
     }
 
+    &__img {
+        height: 100%;
+    }
+
+    &__nav {
+        width: 1rem;
+    }
+
+    //Cray animation https://codepen.io/lukemeyrick/pen/ayRgWO
+    $steps: 50;
     &__link {
         font-family: $fontSecondary;
         text-decoration: none;
         color: $black;
         font-size: $fontSmall;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: rgba($indigoPrimary, 0.10);
+            position: absolute;
+            left: 15px;
+            bottom: -5px;
+            width: calc(100%);
+            height: calc(100% - 5px);
+            z-index: -1;
+            transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+        }
+
+        &:hover:after {
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            background: rgba($indigoPrimary, 0.20);
+                        }
+
+        &:hover {
+            animation: cray 6s infinite;
+            animation: cray 6s infinite steps($steps);
+            display: inline-block;
+            color: $indigoPrimary;
+            
+        }
+
+        @keyframes cray {
+            @for $i from 1 to $steps {
+                $per: 100% / $steps * $i;
+                $weight: (100,
+                        200,
+                        300,
+                        400,
+                        500,
+                        600,
+                        700);
+                $style: (normal,
+                        italic,
+                        normal,
+                        normal);
+                $decor: (none,
+                        none,
+                        line-through,
+                        underline,
+                        none,
+                        none,
+                        none);
+                $trans: (none,
+                        none,
+                        uppercase,
+                        lowercase,
+                        capitalize,
+                        none,
+                        none,
+                        none,
+                        none,
+                        none,
+                        none);
+
+                $arrayW: random(7);
+                $arrayS: random(4);
+                $arrayD: random(7);
+                $arrayT: random(11);
+
+                #{$per} {
+                    font-weight: nth($weight, $arrayW);
+                    font-style: nth($style, $arrayS);
+                    text-decoration: nth($decor, $arrayD);
+                    text-transform: nth($trans, $arrayT);
+                }
+            }
+        }
+
     }
 
 
+}
+// Comingbook style borders: https://codemyui.com/comicbook-inspired-hand-drawn-borders/
+.carousel-inner {
+    background-color: $indigoLight;
+    border: solid black;
+    border-color: black;
+    border-width: 3px 4px 3px 5px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+    overflow: hidden;
+    height: 180px;
+    display: flex;
+    align-items:center;
+    margin-bottom: $spacingMedium;
 }
