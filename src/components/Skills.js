@@ -3,8 +3,8 @@ const Skills = () => {
 
     return (
         <>
-            <section className="skills">
-                <h2 className="sectionheading">About</h2>
+            <section id="skills" className="skills">
+                <h2 className="sectionheading">Skills</h2>
 
                 <h3 className="skills__category-name">Top skills</h3>
                 <div className="skills__category">
