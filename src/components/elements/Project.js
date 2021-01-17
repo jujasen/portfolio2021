@@ -1,13 +1,9 @@
-import react from 'react';
 import React from 'react';
-import {useState} from 'react';
 
 const Project = (props) => {
 
     const { id, name, image, description, link } = props;
 
-    const [hovered, setHovered] = useState(false);
-    const toggleHover = () => setHovered(!hovered);
 
     return (
         <>

@@ -3,7 +3,11 @@
     &__menu-btn {
         width: 25px;
         height: 25px;
+        right: 2rem;
+        bottom: 1.5rem;
     }
+
+
 
     .container-fluid {
         padding: 0 $spacingSmall;
@@ -68,5 +72,10 @@
 
 .navbar-light .navbar-toggler {
     border: none;
+    
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 

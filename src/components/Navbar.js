@@ -1,10 +1,11 @@
-import react from 'react';
 import logo from '../images/logo.svg'
 import menuBtn from '../images/menuBtn.svg'
 import menuBtnHover from '../images/menuBtnHover.svg'
-import main from '../scss/main.scss'
+import React, { useState } from 'react';
+
 
 const Navbar = () => {
+
 
     return (
         <>
@@ -12,7 +13,8 @@ const Navbar = () => {
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#"><img className="svg navbar__logo" src={logo} alt="logo"></img></a>
                     <button className="navbar__menu-toggler" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                        <img className="navbar__menu-btn" src={menuBtn} alt="menu button"></img>
+                        <img className="navbar__menu-btn" src={menuBtnHover} alt="menu button"></img>
+
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="menu__nav navbar-nav ms-auto">
@@ -36,7 +38,9 @@ const Navbar = () => {
                 </div>
             </nav>
         </>
+
     )
+
 }
 
 export default Navbar;

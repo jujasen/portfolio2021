@@ -1,0 +1,16 @@
+.about {
+
+    &__text {
+        margin-bottom: $spacingSmall;
+    }
+
+    &__img {
+        width: 100%;
+        margin: $spacingSmall 0 $spacingMedium 0;
+    }
+
+    &__focustext {
+        font-family: $fontHeading;
+        color: $indigoPrimary;
+    }
+}

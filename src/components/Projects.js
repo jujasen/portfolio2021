@@ -1,4 +1,3 @@
-import react from 'react';
 import Project from './elements/Project'
 import venomlips from '../images/projectimg/venomlips.png'
 import dartmoor from '../images/projectimg/dartmoor.png'

@@ -1,6 +1,4 @@
-import react from 'react';
 import illustration from '../images/illustration.svg'
-import main from  '../scss/main.scss'
 
 
 
