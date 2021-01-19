@@ -17,5 +17,10 @@
         &__link {
             color: $indigoPrimary;
             font-size: $fontMedium;
+
+            &:hover {
+                color: $indigoPrimary;
+
+            }
         }
 }

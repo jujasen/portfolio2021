@@ -16,9 +16,9 @@ const Hero = () => {
                     <p className="hero__location">Living in Bergen, Norway</p>
                     <p className="hero__description">i code & design stuff</p>
                     <p id="projects" className="hero__support">keep scrolling to see said stuff</p>
-                    <p className="hero__arrow">&#8964;</p>
                 </div>
             </section>
+            <p className="hero__arrow">&#8964;</p>
         </>
     )
 }
