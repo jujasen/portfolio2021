@@ -22,7 +22,7 @@ const Project = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="project__section">
+                <div className="project__section project__text">
                     <p className="project__desc">{description}</p>
                     <a className="project__link" href={link}>View &gt;&gt;</a>
                 </div>
