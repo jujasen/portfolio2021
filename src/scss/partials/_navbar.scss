@@ -79,3 +79,18 @@
     }
 }
 
+@media only screen and (min-width: $breakDesktop) {
+    .navbar {
+
+        &__logo {
+            margin-left: 100px;
+
+        }
+        
+        .menu {
+            &__nav {
+                margin-right: 100px;
+            }
+        }
+    }
+}

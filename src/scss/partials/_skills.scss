@@ -35,3 +35,9 @@
         margin-bottom: $spacingMedium;
     }
 }
+
+@media only screen and (min-width: $breakDesktop) {
+    .skills {
+        margin: 50px 100px;
+    }
+}
