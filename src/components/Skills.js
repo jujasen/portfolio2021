@@ -16,11 +16,12 @@ const Skills = () => {
                     <p className="skills__skill">figma</p>
                     <p className="skills__skill">adobe xd</p>
                     <p className="skills__skill">adobe illustrator</p>
+                    <p className="skills__skill">rest api</p>
                 </div>
 
                 <h3 className="skills__category-name">Intermediate</h3>
                 <div className="skills__category">
-                    <p className="skills__skill">rest api</p>
+                    <p className="skills__skill">heroku</p>
                     <p className="skills__skill">strapi</p>
                     <p className="skills__skill">adobe photoshop</p>
                     <p className="skills__skill">node.js</p>

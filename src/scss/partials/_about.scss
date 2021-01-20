@@ -13,5 +13,29 @@
         font-family: $fontHeading;
         color: $indigoPrimary;
     }
+}
 
+@media only screen and (min-width: $breakDesktop) {
+
+    .about {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px 100px;
+
+
+        &__text {
+            font-size: $desktopSmall;
+            margin: 0 0 100px 100px;
+        }
+
+        &__desc {
+            order: 2;
+        }
+
+        &__img {
+            order: 1;
+        }
+
+    }
 }
