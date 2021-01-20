@@ -5,3 +5,11 @@
     margin-bottom: $spacingLarge;
 
 }
+
+@media only screen and (min-width: $breakDesktop) {
+
+    .sectionheading {
+        font-size: $headingMedium;
+        margin: 50px;
+    }
+}
