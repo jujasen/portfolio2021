@@ -41,3 +41,19 @@
         margin: 50px 100px;
     }
 }
+
+@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+        .skills {
+            margin: 50px;
+
+            &__category-name {
+                font-size: $fontSmall;
+            }
+
+            &__skill {
+                font-size: $fontSmall;
+            }
+
+
+        }
+}

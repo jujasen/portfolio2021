@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
 
 const Project = (props) => {
 
     const { id, name, image, description, link } = props;
-
 
     return (
         <>
@@ -12,7 +13,7 @@ const Project = (props) => {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <div className="project__visual">
-                                <a href={link}><h3 className="project__title">{name}</h3></a>
+                                <a href={link}><h3 className="project__title d-block w-100">{name}</h3></a>
                             </div>
                         </div>
                         <div className="carousel-item">

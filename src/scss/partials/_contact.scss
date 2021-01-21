@@ -52,3 +52,19 @@
         }
     }
 }
+
+@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+
+        .contact {
+            margin: 50px;
+
+            &__text {
+                font-size: $desktopSmall;
+            }
+
+            &__link {
+                font-size: $desktopSmall;
+
+            }
+        }
+}

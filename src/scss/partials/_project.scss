@@ -156,6 +156,8 @@
             justify-content: space-evenly;
         }
 
+
+
         &__desc {
             font-size: $desktopSmall;
         }
@@ -174,3 +176,24 @@
 
 }
 
+@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+    .project {
+
+        margin: 75px 50px;
+
+        &__desc {
+            font-size: $desktopSmall;
+        }
+
+        &__link {
+            font-size: $desktopSmall;
+
+        }
+
+
+        .carousel-inner {
+            height: 300px;
+        }
+
+    }   
+}

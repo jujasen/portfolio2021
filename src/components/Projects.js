@@ -6,10 +6,19 @@ import mars from '../images/projectimg/mars.png'
 import flower from '../images/projectimg/flower.png'
 import nicecream from '../images/projectimg/nicecream.png'
 
+// function adjustTitles () {
+
+//     const img = ReactDOM.findDOMNode(Project) 
+
+// }
+// adjustTitles();
+
+
 
 
 
 const Projects = () => {
+    
 
     return (
         <>

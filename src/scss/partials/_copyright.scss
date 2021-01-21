@@ -11,3 +11,16 @@
         color: $indigoPrimary;
     }
 }
+
+@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+    .copyright {
+        &__text {
+            font-size: $fontSmall;
+        }
+
+        &__link {
+            font-size: $fontSmall;
+        }
+    }
+
+}

@@ -146,3 +146,42 @@
         }
     }
 }
+
+@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) { 
+        .hero {
+
+            &__section {
+                display: block;
+                margin: 0 auto;
+                padding: 0 50px;
+            }
+
+
+            &__illustration {
+                max-width: 300px;
+                margin: 0 auto;
+                margin-top: 60px;
+            }
+
+            &__heading {
+                font-size: $headingTablet;
+            }
+
+            &__subheading {
+                font-size: $desktopMedium;
+            }
+
+            &__location {
+                font-size: $desktopSmall;
+            }
+
+            &__description {
+                font-size: $desktopMedium;
+                margin-top: 50px;
+            }
+
+            &__support {
+                font-size: $desktopSmall;
+            }
+        }
+}

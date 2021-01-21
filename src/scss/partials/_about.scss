@@ -39,3 +39,22 @@
 
     }
 }
+
+@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+
+        .about {
+            margin: 75px 50px;
+
+
+            &__text {
+                font-size: $desktopSmall;
+            }
+
+            &__img {
+                margin: 0;
+                margin-top: 1rem;
+            }
+
+
+        }
+}
