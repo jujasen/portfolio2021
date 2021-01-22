@@ -1,7 +1,5 @@
 import illustration from '../images/illustration.svg'
 
-
-
 const Hero = () => {
 
     return (

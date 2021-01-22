@@ -1,9 +1,7 @@
 import logo from '../images/logo.svg'
 import menuBtn from '../images/menuBtn.svg'
 
-
 const Navbar = () => {
-
 
     return (
         <>
@@ -36,9 +34,7 @@ const Navbar = () => {
                 </div>
             </nav>
         </>
-
     )
-
 }
 
 export default Navbar;

@@ -1,6 +1,5 @@
 import social from '../images/social.png'
 
-
 const Skills = () => {
 
     return (

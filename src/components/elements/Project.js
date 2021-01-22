@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Project = (props) => {
 
     const { id, name, image, description, link } = props;
