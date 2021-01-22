@@ -14,7 +14,7 @@ const About = () => {
                     Creating <span className="about__focustext">modern</span> and <span className="about__focustext">clean</span> web-solutions with <span className="about__focustext">easy-to-use</span> UI is my focus
                 </p>
                 </div>
-                <img className="about__img" src={me} alt="picture of me"/>
+                <img className="about__img" src={me} alt="myself in black and white"/>
 
             </section>
         </>
