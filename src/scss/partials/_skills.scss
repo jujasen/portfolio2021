@@ -39,6 +39,14 @@
 @media only screen and (min-width: $breakDesktop) {
     .skills {
         margin: 50px 100px;
+
+            &__category-name {
+                font-size: $fontMedium;
+            }
+
+            &__skill {
+                font-size: $fontMedium;
+            }
     }
 }
 
@@ -56,4 +64,19 @@
 
 
         }
+}
+
+@media only screen and (min-width: $breakTablet) and (max-width: $breakDesktop) {
+    .skills {
+        margin: 50px;
+
+        &__category-name {
+            font-size: $fontMedium;
+        }
+
+        &__skill {
+            font-size: $fontMedium;
+        }
+    }
+    
 }

@@ -197,3 +197,46 @@
 
     }   
 }
+
+@media only screen and (min-width: $breakTablet) and (max-width: $breakDesktop) {
+    .project {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+
+        &__visual {
+            width: 380px;
+
+        }
+
+        &__img {
+            width: 380px;
+            height: 250px;
+            margin: 0;
+        }
+
+        &__text {
+            margin-left: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+
+
+        &__desc {
+            font-size: $desktopSmall;
+        }
+
+        &__link {
+            font-size: $desktopSmall;
+
+        }
+
+    }
+
+    .carousel-inner {
+        width: 380px;
+        height: 250px;
+    }
+}

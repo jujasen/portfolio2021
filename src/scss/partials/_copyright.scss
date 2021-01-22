@@ -12,7 +12,7 @@
     }
 }
 
-@media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+@media only screen and (min-width: $breakMobile) {
     .copyright {
         &__text {
             font-size: $fontSmall;

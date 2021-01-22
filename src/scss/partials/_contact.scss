@@ -54,17 +54,42 @@
 }
 
 @media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
+    .contact {
+        margin: 50px;
 
-        .contact {
-            margin: 50px;
-
-            &__text {
-                font-size: $desktopSmall;
-            }
-
-            &__link {
-                font-size: $desktopSmall;
-
-            }
+        &__text {
+            font-size: $desktopSmall;
         }
+
+        &__link {
+            font-size: $desktopSmall;
+
+        }
+    }
+}
+
+@media only screen and (min-width: $breakTablet) and (max-width: $breakDesktop) {
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px;
+
+        &__text {
+            font-size: $desktopSmall;
+            margin: 0 0 50px 50px;
+        }
+
+        &__link {
+            font-size: $desktopSmall;
+        }
+
+        &__desc {
+            order: 2;
+        }
+
+        &__img {
+            order: 1;
+        }
+    }
 }

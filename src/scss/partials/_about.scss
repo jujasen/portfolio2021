@@ -58,3 +58,27 @@
 
         }
 }
+
+@media only screen and (min-width: $breakTablet) and (max-width: $breakDesktop) {
+    .about {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px 50px;
+
+
+        &__text {
+            font-size: $desktopSmall;
+            margin: 0 0 50px 50px;
+        }
+
+        &__desc {
+            order: 2;
+        }
+
+        &__img {
+            order: 1;
+        }
+
+    }
+}
