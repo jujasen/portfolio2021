@@ -1,28 +1,27 @@
 .contact {
-        &__text {
-            margin-bottom: $spacingMedium;
-        }
+    &__text {
+        margin-bottom: $spacingMedium;
+    }
 
-        &__img {
-            display: block;
-            width: 60%;
-            margin: $spacingSmall auto $spacingMedium auto;
-        }
+    &__img {
+        display: block;
+        width: 60%;
+        margin: $spacingSmall auto $spacingMedium auto;
+    }
 
-        &__focustext {
-            font-family: $fontHeading;
+    &__focustext {
+        font-family: $fontHeading;
+        color: $indigoPrimary;
+    }
+
+    &__link {
+        color: $indigoPrimary;
+        font-size: $fontMedium;
+
+        &:hover {
             color: $indigoPrimary;
         }
-
-        &__link {
-            color: $indigoPrimary;
-            font-size: $fontMedium;
-
-            &:hover {
-                color: $indigoPrimary;
-
-            }
-        }
+    }
 }
 
 @media only screen and (min-width: $breakDesktop) {
@@ -39,9 +38,7 @@
 
         &__link {
             font-size: $desktopSmall;
-
         }
-
 
         &__desc {
             order: 2;
@@ -63,7 +60,6 @@
 
         &__link {
             font-size: $desktopSmall;
-
         }
     }
 }

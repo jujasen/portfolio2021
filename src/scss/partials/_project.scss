@@ -6,7 +6,6 @@
         color: $black;
     }
 
-
     &__visual {
         background-color: $indigoLight;
         margin-left: auto;
@@ -112,10 +111,7 @@
                 }
             }
         }
-
     }
-
-
 }
 // Comingbook style borders: https://codemyui.com/comicbook-inspired-hand-drawn-borders/
 .carousel-inner {
@@ -141,7 +137,6 @@
 
         &__visual {
             width: 580px;
-
         }
 
         &__img {
@@ -149,6 +144,7 @@
             height: 400px;
             margin: 0;
         }
+
         &__text {
             margin-left: 100px;
             display: flex;
@@ -156,24 +152,19 @@
             justify-content: space-evenly;
         }
 
-
-
         &__desc {
             font-size: $desktopSmall;
         }
 
         &__link {
             font-size: $desktopSmall;
-
         }
-
     }
 
     .carousel-inner {
         width: 580px;
         height: 400px;
     }
-
 }
 
 @media only screen and (min-width: $breakMobile) and (max-width: $breakTablet) {
@@ -187,14 +178,11 @@
 
         &__link {
             font-size: $desktopSmall;
-
         }
-
 
         .carousel-inner {
             height: 300px;
         }
-
     }   
 }
 
@@ -206,7 +194,6 @@
 
         &__visual {
             width: 380px;
-
         }
 
         &__img {
@@ -222,15 +209,12 @@
             justify-content: space-evenly;
         }
 
-
-
         &__desc {
             font-size: $desktopSmall;
         }
 
         &__link {
             font-size: $desktopSmall;
-
         }
 
     }
