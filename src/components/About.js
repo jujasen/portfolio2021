@@ -1,4 +1,4 @@
-import me from '../images/me.png'
+import me from '../images/me.jpg'
 
 const About = () => {
 
@@ -9,6 +9,9 @@ const About = () => {
                 <div className="about__desc">
                 <p className="about__text">
                     My name is <span className="about__focustext">Julia Jakobsen</span> and i am currently at the end of my <span className="about__focustext">frontend-development</span> studies at Noroff Bergen
+                </p>
+                <p className="about__text">
+                        The past few months i've also been working as a <span className="about__focustext">frontend developer/ UI designer</span> part-time. 
                 </p>
                 <p className="about__text">
                     Creating <span className="about__focustext">modern</span> and <span className="about__focustext">clean</span> web-solutions with <span className="about__focustext">easy-to-use</span> UI is my focus
